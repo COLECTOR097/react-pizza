@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { act } from 'react-dom/test-utils';
 
 export function Categories() {
   const [activeIndex, setActiveIndex] = useState(0);
