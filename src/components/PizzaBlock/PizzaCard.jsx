@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export function PizzaBlock({ id, name, price, imageUrl, sizes, types }) {
+export function PizzaCard({ id, name, price, imageUrl, sizes, types }) {
   const [activeType, setActiveType] = useState(0);
   const [activeSize, setActiveSize] = useState(0);
   const typeName = ['Tonkoe', 'Tradicionnoe'];

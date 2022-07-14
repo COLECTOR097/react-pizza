@@ -1,8 +1,9 @@
+import React from 'react';
+
+import { Header } from './components';
+import { PageNotFound } from './pages';
+
 import './scss/app.scss';
-
-import { Header, Categories, Sort, PizzaBlock } from './components';
-
-import pizzaMockData from './assets/pizzas.json';
 
 function App() {
   return (
@@ -10,14 +11,7 @@ function App() {
       <Header />
       <div className="content">
         <div className="container">
-          <div className="content__top">
-            <Categories />
-            <Sort />
-          </div>
-          <h2 className="content__title">Все пиццы</h2>
-          <div className="content__items">
-            {pizzaMockData.map(item => <PizzaBlock key={item.id} {...item} />)}
-          </div>
+          <PageNotFound />
         </div>
       </div>
     </div>
