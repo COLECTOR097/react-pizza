@@ -1,7 +1,8 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 
 import { Header } from './components';
-import { PageNotFound } from './pages';
+import { PageNotFound, Home, Cart } from './pages';
 
 import './scss/app.scss';
 
@@ -11,7 +12,11 @@ function App() {
       <Header />
       <div className="content">
         <div className="container">
-          <PageNotFound />
+          <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="*" element={<PageNotFound />} />
+          </Routes>
         </div>
       </div>
     </div>

@@ -1,3 +1,3 @@
 export * from './Home';
-export * from './Card';
+export * from './Cart';
 export * from './PageNotFound';
